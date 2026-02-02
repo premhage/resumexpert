@@ -1,0 +1,15 @@
+flask
+flask-cors
+flask-restful
+supabase
+spacy
+nltk
+sentence-transformers
+scikit-learn
+pypdf2
+pdfplumber
+python-docx
+python-dotenv
+pytest
+numpy
+pandas

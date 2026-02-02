@@ -1,0 +1,23 @@
+# Environment variables
+.env
+.flaskenv
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.venv/
+build/
+dist/
+*.egg-info/
+
+# VS Code
+.vscode/
+
+# MacOS
+.DS_Store
+
+# Supabase
+supabase/functions/
