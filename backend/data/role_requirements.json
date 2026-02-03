@@ -1,0 +1,85 @@
+{
+    "Java Developer": {
+        "critical_skills": [
+            "Java",
+            "Spring Boot",
+            "SQL",
+            "REST API"
+        ],
+        "recommended_skills": [
+            "Microservices",
+            "Hibernate",
+            "Docker",
+            "AWS",
+            "Git"
+        ],
+        "description": "Backend development focused on enterprise-grade Java applications."
+    },
+    "Data Scientist": {
+        "critical_skills": [
+            "Python",
+            "Machine Learning",
+            "SQL",
+            "Pandas",
+            "NumPy"
+        ],
+        "recommended_skills": [
+            "Deep Learning",
+            "TensorFlow",
+            "PyTorch",
+            "Tableau",
+            "Big Data"
+        ],
+        "description": "Analyzing complex data to build predictive models and derive insights."
+    },
+    "Frontend Developer": {
+        "critical_skills": [
+            "JavaScript",
+            "React",
+            "HTML",
+            "CSS"
+        ],
+        "recommended_skills": [
+            "TypeScript",
+            "Redux",
+            "Tailwind CSS",
+            "Next.js",
+            "Figma"
+        ],
+        "description": "Building interactive and responsive user interfaces for web applications."
+    },
+    "DevOps Engineer": {
+        "critical_skills": [
+            "Docker",
+            "Kubernetes",
+            "CI/CD",
+            "Linux",
+            "AWS"
+        ],
+        "recommended_skills": [
+            "Terraform",
+            "Ansible",
+            "Jenkins",
+            "Python",
+            "Bash"
+        ],
+        "description": "Managing detailed deployment pipelines and cloud infrastructure."
+    },
+    "Full Stack Developer": {
+        "critical_skills": [
+            "JavaScript",
+            "React",
+            "Node.js",
+            "SQL",
+            "REST API"
+        ],
+        "recommended_skills": [
+            "TypeScript",
+            "MongoDB",
+            "Docker",
+            "AWS",
+            "GraphQL"
+        ],
+        "description": "Handling both client-side and server-side development logic."
+    }
+}

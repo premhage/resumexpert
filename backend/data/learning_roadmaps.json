@@ -1,0 +1,91 @@
+{
+    "Java Developer": [
+        {
+            "week": "1-2",
+            "topic": "Core Java Fundamentals",
+            "details": "OOPs concepts, Collections, Exception Handling, Multithreading.",
+            "resources": [
+                "https://docs.oracle.com/javase/tutorial/",
+                "https://www.baeldung.com/java-tutorial"
+            ]
+        },
+        {
+            "week": "3-4",
+            "topic": "Spring Framework Basics",
+            "details": "Dependency Injection, Spring MVC, Application Context.",
+            "resources": [
+                "https://spring.io/guides"
+            ]
+        },
+        {
+            "week": "5-6",
+            "topic": "Database & ORM",
+            "details": "MySQL, JDBC, Hibernate/JPA relationships.",
+            "resources": [
+                "https://dev.mysql.com/doc/",
+                "https://hibernate.org/rom/documentation/"
+            ]
+        },
+        {
+            "week": "7-8",
+            "topic": "Spring Boot & REST API",
+            "details": "Building RESTful services, Actuator, Security.",
+            "resources": [
+                "https://www.youtube.com/watch?v=9SGDpanrc8U"
+            ]
+        }
+    ],
+    "Data Scientist": [
+        {
+            "week": "1-2",
+            "topic": "Python for Data Science",
+            "details": "Data structures, List comprehensions, NumPy basics.",
+            "resources": [
+                "https://docs.python.org/3/"
+            ]
+        },
+        {
+            "week": "3-4",
+            "topic": "Data Manipulation",
+            "details": "Pandas DataFrames, Cleaning data, Handling missing values.",
+            "resources": [
+                "https://pandas.pydata.org/docs/"
+            ]
+        },
+        {
+            "week": "5-6",
+            "topic": "Machine Learning Algorithms",
+            "details": "Linear Regression, Decision Trees, Scikit-learn.",
+            "resources": [
+                "https://scikit-learn.org/stable/tutorial/"
+            ]
+        }
+    ],
+    "Frontend Developer": [
+        {
+            "week": "1-2",
+            "topic": "HTML5 & CSS3 Mastery",
+            "details": "Semantic HTML, Flexbox, Grid, Responsive Design.",
+            "resources": [
+                "https://developer.mozilla.org/en-US/docs/Web/HTML",
+                "https://css-tricks.com/"
+            ]
+        },
+        {
+            "week": "3-4",
+            "topic": "JavaScript Deep Dive",
+            "details": "ES6+, DOM Manipulation, Async/Await, Fetch API.",
+            "resources": [
+                "https://javascript.info/"
+            ]
+        },
+        {
+            "week": "5-6",
+            "topic": "React Fundamentals",
+            "details": "Components, Props, State, Hooks (useState, useEffect).",
+            "resources": [
+                "https://react.dev/learn"
+            ]
+        }
+    ]
+}
