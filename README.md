@@ -30,7 +30,7 @@ ResumeXpert is an intelligent career guidance system that uses NLP and Machine L
 
 1.  Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/ResumeXpert.git
+    git clone https://github.com/premhage/ResumeXpert.git
     cd ResumeXpert
     ```
 
@@ -106,4 +106,4 @@ ResumeXpert/
 ```
 
 ---
-Built with ❤️ by [Your Name]
+Built with ❤️ by Prem Hage
