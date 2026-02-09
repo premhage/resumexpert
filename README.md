@@ -18,8 +18,6 @@ ResumeXpert is an intelligent career guidance system that uses NLP and Machine L
 - **AI/ML**: spaCy, sentence-transformers, scikit-learn
 <<<<<<< HEAD
 =======
-- **Database**: Supabase (PostgreSQL)
->>>>>>> ad4e6f6dce2d8f86eeeccd06fb942b42a1960210
 - **Frontend**: HTML5, CSS3, Bootstrap 5, JavaScript, Chart.js
 
 ## 🚀 How to Run
