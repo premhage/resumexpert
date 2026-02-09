@@ -99,7 +99,26 @@ def upload_resume():
 
 @app.route('/')
 def home():
+    # Serve the frontend HTML
+    frontend_path = os.path.join(os.path.dirname(__file__), '..', 'frontend', 'index.html')
+    if os.path.exists(frontend_path):
+        from flask import send_file
+        return send_file(frontend_path)
     return {"message": "ResumeXpert API is running. Use POST /api/upload to analyze resumes."}
+
+@app.route('/<path:path>')
+def serve_frontend(path):
+    frontend_dir = os.path.join(os.path.dirname(__file__), '..', 'frontend')
+    file_path = os.path.join(frontend_dir, path)
+    if os.path.exists(file_path) and os.path.isfile(file_path):
+        from flask import send_file
+        return send_file(file_path)
+    # If file not found, return frontend index.html for client-side routing
+    index_path = os.path.join(frontend_dir, 'index.html')
+    if os.path.exists(index_path):
+        from flask import send_file
+        return send_file(index_path)
+    return {"error": "Not found"}, 404
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
