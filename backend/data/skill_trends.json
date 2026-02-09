@@ -1,0 +1,62 @@
+{
+    "Java": {
+        "demand": "High",
+        "trend": "Stable"
+    },
+    "Python": {
+        "demand": "High",
+        "trend": "Rising"
+    },
+    "JavaScript": {
+        "demand": "High",
+        "trend": "Stable"
+    },
+    "React": {
+        "demand": "High",
+        "trend": "Rising"
+    },
+    "Spring Boot": {
+        "demand": "High",
+        "trend": "Rising"
+    },
+    "SQL": {
+        "demand": "High",
+        "trend": "Stable"
+    },
+    "Docker": {
+        "demand": "High",
+        "trend": "Rising"
+    },
+    "Kubernetes": {
+        "demand": "High",
+        "trend": "Rising"
+    },
+    "AWS": {
+        "demand": "High",
+        "trend": "Rising"
+    },
+    "Machine Learning": {
+        "demand": "High",
+        "trend": "Explosive"
+    },
+    "TensorFlow": {
+        "demand": "Medium",
+        "trend": "Stable"
+    },
+    "PHP": {
+        "demand": "Medium",
+        "trend": "Declining"
+    },
+    "Ruby": {
+        "demand": "Low",
+        "trend": "Declining"
+    },
+    "Go": {
+        "demand": "Medium",
+        "trend": "Rising"
+    },
+    "Rust": {
+        "demand": "Low",
+        "trend": "Rising"
+    }
+}

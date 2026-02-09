@@ -1,0 +1,72 @@
+{
+    "Java Developer": {
+        "Junior": {
+            "average_score": 65,
+            "top_10_score": 85
+        },
+        "Mid-Level": {
+            "average_score": 72,
+            "top_10_score": 88
+        },
+        "Senior": {
+            "average_score": 78,
+            "top_10_score": 92
+        }
+    },
+    "Data Scientist": {
+        "Junior": {
+            "average_score": 60,
+            "top_10_score": 80
+        },
+        "Mid-Level": {
+            "average_score": 70,
+            "top_10_score": 85
+        },
+        "Senior": {
+            "average_score": 75,
+            "top_10_score": 90
+        }
+    },
+    "Frontend Developer": {
+        "Junior": {
+            "average_score": 68,
+            "top_10_score": 86
+        },
+        "Mid-Level": {
+            "average_score": 74,
+            "top_10_score": 89
+        },
+        "Senior": {
+            "average_score": 80,
+            "top_10_score": 94
+        }
+    },
+    "DevOps Engineer": {
+        "Junior": {
+            "average_score": 62,
+            "top_10_score": 82
+        },
+        "Mid-Level": {
+            "average_score": 70,
+            "top_10_score": 88
+        },
+        "Senior": {
+            "average_score": 76,
+            "top_10_score": 91
+        }
+    },
+    "Full Stack Developer": {
+        "Junior": {
+            "average_score": 64,
+            "top_10_score": 84
+        },
+        "Mid-Level": {
+            "average_score": 71,
+            "top_10_score": 87
+        },
+        "Senior": {
+            "average_score": 77,
+            "top_10_score": 93
+        }
+    }
+}

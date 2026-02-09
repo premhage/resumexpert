@@ -15,7 +15,7 @@ class NLPProcessor:
             self.nlp = spacy.load("en_core_web_md")
             print("spaCy model loaded successfully.")
         except OSError:
-            print("❌ Error: spaCy model 'en_core_web_md' not found.")
+            print("[ERROR] spaCy model 'en_core_web_md' not found.")
             print("Run: python -m spacy download en_core_web_md")
             self.nlp = None
 

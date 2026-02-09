@@ -1,7 +1,7 @@
 import json
 import os
 import re
-from backend.services.nlp_processor import nlp_processor
+from services.nlp_processor import nlp_processor
 
 class SkillExtractor:
     def __init__(self):

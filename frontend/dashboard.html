@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResumeXpert - Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">ResumeXpert</a>
+            <button class="btn btn-outline-light ms-auto" onclick="window.location.href='index.html'">New
+                Analysis</button>
+        </div>
+    </nav>
+
+    <div class="container mt-5 pt-5">
+
+        <!-- Summary Header -->
+        <div class="row mb-4">
+            <div class="col-md-12">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body">
+                        <h4 class="card-title text-primary">Executive Summary</h4>
+                        <p class="card-text text-muted" id="summaryText">Loading summary...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-4">
+
+            <!-- Overall Score & Role Filter -->
+            <div class="col-md-4">
+                <div class="card shadow-sm border-0 h-100">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mb-4">Overall Match Score</h5>
+                        <div class="gauge-container mx-auto" style="width: 200px; height: 100px;">
+                            <!-- Placeholder for Gauge Chart -->
+                            <canvas id="scoreChart"></canvas>
+                        </div>
+                        <h2 class="display-4 fw-bold text-primary mt-3" id="scoreDisplay">--%</h2>
+                        <p class="text-muted" id="roleDisplay">Target Role: --</p>
+
+                        <div class="alert alert-info py-2 mt-3" id="benchmarkDisplay">
+                            Benchmark: Loading...
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Best Fit Roles -->
+            <div class="col-md-8">
+                <div class="card shadow-sm border-0 h-100">
+                    <div class="card-body">
+                        <h5 class="card-title mb-3">Best Fit Career Paths</h5>
+                        <div class="table-responsive">
+                            <table class="table table-hover align-middle">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>Role</th>
+                                        <th>Match %</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="rolesTable">
+                                    <!-- Populated by JS -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skill Analysis -->
+            <div class="col-md-6">
+                <div class="card shadow-sm border-0 h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Skill Analysis</h5>
+                        <ul class="nav nav-tabs" id="skillTabs" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="matched-tab" data-bs-toggle="tab" href="#matched"
+                                    role="tab">✅ Matched</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="missing-tab" data-bs-toggle="tab" href="#missing" role="tab">❌
+                                    Missing</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content mt-3" id="skillTabContent">
+                            <div class="tab-pane fade show active" id="matched" role="tabpanel">
+                                <div class="d-flex flex-wrap gap-2" id="matchedSkillsList"></div>
+                            </div>
+                            <div class="tab-pane fade" id="missing" role="tabpanel">
+                                <div class="alert alert-warning">
+                                    <strong>Critical Gaps:</strong> These skills are highly required for your role.
+                                </div>
+                                <ul class="list-group list-group-flush" id="missingSkillsList"></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Market Trends -->
+            <div class="col-md-6">
+                <div class="card shadow-sm border-0 h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Market Trends</h5>
+                        <p class="text-muted small">Based on current job market demand.</p>
+                        <ul class="list-group list-group-flush" id="trendsList">
+                            <!-- Populated by JS -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recommendations -->
+            <div class="col-md-12">
+                <div class="card shadow-sm border-0 bg-light">
+                    <div class="card-body">
+                        <h5 class="card-title text-dark">AI Recommendations</h5>
+                        <div id="recommendationsList"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Learning Roadmap -->
+            <div class="col-md-12">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body">
+                        <h5 class="card-title mb-4">Personalized Learning Roadmap</h5>
+                        <div class="timeline" id="roadmapTimeline">
+                            <!-- Populated by JS -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interview Prep -->
+            <div class="col-md-12 mb-5">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body">
+                        <h5 class="card-title mb-3">Interview Preparation</h5>
+                        <div class="accordion" id="interviewAccordion">
+                            <!-- Populated by JS -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+
+</html>

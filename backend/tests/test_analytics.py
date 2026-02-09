@@ -1,5 +1,5 @@
-from backend.services.role_scorer import role_scorer
-from backend.services.recommendation_engine import recommendation_engine
+from services.role_scorer import role_scorer
+from services.recommendation_engine import recommendation_engine
 
 def test_analytics():
     print("--- Testing Analytics System ---")
